@@ -17,6 +17,7 @@ public class MyApplication extends Application {
 
     public void onCreate(){
         super.onCreate();
+        printHashKey();
     }
     // Add code to print out the key hash
     public void printHashKey(){
