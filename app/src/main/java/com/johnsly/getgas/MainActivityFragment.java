@@ -32,9 +32,7 @@ public class MainActivityFragment extends Fragment {
         public void onSuccess(LoginResult loginResult) {
             AccessToken accessToken = loginResult.getAccessToken();
             Profile profile = Profile.getCurrentProfile();
-            if (profile != null) {
-                mTextDetails.setText("Welcome " + profile.getName());
-            }
+            displayWelcomeMessage(profile);
         }
 
         @Override
@@ -66,6 +64,12 @@ public class MainActivityFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
+    private void displayWelcomeMessage(Profile profile) {
+        if (profile != null) {
+            mTextDetails.setText("Welcome " + profile.getName());
+        }
+    }
+
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -73,6 +77,13 @@ public class MainActivityFragment extends Fragment {
         loginButton.setReadPermissions("user_friends");
         loginButton.setFragment(this);
         loginButton.registerCallback(mcallbackManager, mCallback);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Profile profile = Profile.getCurrentProfile();
+        displayWelcomeMessage(profile);
     }
 
     @Override
