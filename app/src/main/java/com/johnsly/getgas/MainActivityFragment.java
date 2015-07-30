@@ -10,13 +10,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.facebook.AccessToken;
-import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.Profile;
-import com.facebook.ProfileTracker;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
@@ -27,11 +25,8 @@ import com.facebook.login.widget.LoginButton;
 public class MainActivityFragment extends Fragment {
 
     private TextView mTextDetails;
+
     private CallbackManager mcallbackManager;
-
-    private AccessTokenTracker mTokenTracker;
-    private ProfileTracker mProfileTracker;
-
     private FacebookCallback<LoginResult> mCallback = new FacebookCallback<LoginResult>() {
         @Override
         public void onSuccess(LoginResult loginResult) {
@@ -61,22 +56,6 @@ public class MainActivityFragment extends Fragment {
         // Initialize the SDK before executing any other operations,
         // especially, if you're using Facebook UI elements.
         mcallbackManager = CallbackManager.Factory.create();
-        AccessTokenTracker tracker = new AccessTokenTracker() {
-            @Override
-            protected void onCurrentAccessTokenChanged(AccessToken old, AccessToken newToken) {
-
-            }
-        };
-
-        ProfileTracker profileTracker = new ProfileTracker() {
-            @Override
-            protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
-              displayWelcomeMessage(newProfile);
-            }
-        };
-
-        mTokenTracker.startTracking();
-        mProfileTracker.startTracking();
     }
 
     @Override
@@ -105,13 +84,6 @@ public class MainActivityFragment extends Fragment {
         super.onResume();
         Profile profile = Profile.getCurrentProfile();
         displayWelcomeMessage(profile);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        mTokenTracker.stopTracking();
-        mProfileTracker.startTracking();
     }
 
     @Override
