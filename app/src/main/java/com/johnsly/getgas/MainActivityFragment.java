@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.facebook.FacebookSdk;
+import com.facebook.login.widget.LoginButton;
 
 
 /**
@@ -29,5 +30,11 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_main, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        LoginButton loginButton = (LoginButton) view.findViewById(R.id.login_button);
     }
 }
