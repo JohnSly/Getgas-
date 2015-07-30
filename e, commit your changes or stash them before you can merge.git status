@@ -1,0 +1,83 @@
+[33mcommit fd7c4f6d1252c3f88156d751684e654eb42436cc[m
+Author: Sylvia <sylviakieha@gmail.com>
+Date:   Thu Jul 30 19:13:46 2015 +0300
+
+    added profile tracker
+
+[33mcommit 0e458d9c02317da63fc58671c0c1b759a2a6120f[m
+Author: Sylvia Kieha <sylviakieha@gmail.com>
+Date:   Thu Jul 30 18:51:01 2015 +0300
+
+    Update .gitignore
+
+[33mcommit ccd4131950c6e10a4b848260cc70e8181112373d[m
+Author: Sylvia <sylviakieha@gmail.com>
+Date:   Thu Jul 30 18:43:36 2015 +0300
+
+    added welcome message
+
+[33mcommit 5042afffdec8c903e4cc0a6920e9d6dfa6824aca[m
+Author: Sylvia <sylviakieha@gmail.com>
+Date:   Thu Jul 30 17:42:37 2015 +0300
+
+    initialized callbackmanager
+
+[33mcommit 3beea06a3c8b5b588dc32774ba6d2d84d3a35fc9[m
+Author: Sylvia <sylviakieha@gmail.com>
+Date:   Thu Jul 30 17:21:30 2015 +0300
+
+    initialized login button
+
+[33mcommit d90cebe2d0501e98b7baaa8383ef201eee20546c[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Thu Jul 30 09:30:54 2015 +0300
+
+    refactored to use activity with fragmnets
+
+[33mcommit e78f4145a1bb7cec9898bb542369b797aa5eb5aa[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Thu Jul 30 00:01:29 2015 +0300
+
+    last working version
+
+[33mcommit 9dd9e22200387143180da8a90f5c883a7652d456[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 23:55:54 2015 +0300
+
+    last working version
+
+[33mcommit 2d5c4a1166f261c475a3e8f4353745ffce9f96b7[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 23:05:37 2015 +0300
+
+    login activity added and hashkey saved
+
+[33mcommit 542724ec20eef0516c78b69d2e83095b9dc7351f[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 22:53:43 2015 +0300
+
+    with myapplication.java, internet permission and hashkey
+
+[33mcommit 589f5a940de76bfe78026dde29022dec4883190a[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 22:41:21 2015 +0300
+
+    with app_id, and string values added
+
+[33mcommit cee8803c8babc7e9f0b923aabee064aa115b01a4[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 21:41:53 2015 +0300
+
+    with dependencies added
+
+[33mcommit 5ee00279de2c21019bf66c29ebcea1108d9ac26c[m
+Author: John Munyi <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 19:43:27 2015 +0300
+
+    Create README.md
+
+[33mcommit e699fbda90c5a8f699525c0f9471063de7faa977[m
+Author: wolfieorama <wachirawamunyi@gmail.com>
+Date:   Wed Jul 29 19:39:14 2015 +0300
+
+    initial set up

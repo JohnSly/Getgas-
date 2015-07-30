@@ -44,6 +44,8 @@ public class MainActivityFragment extends Fragment {
         public void onError(FacebookException e) {
 
         }
+
+
     };
 
     public MainActivityFragment() {
@@ -91,4 +93,5 @@ public class MainActivityFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         mcallbackManager.onActivityResult(requestCode, resultCode, data);
     }
+
 }
