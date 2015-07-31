@@ -33,6 +33,9 @@ public class MainActivityFragment extends Fragment {
             AccessToken accessToken = loginResult.getAccessToken();
             Profile profile = Profile.getCurrentProfile();
             displayWelcomeMessage(profile);
+
+            Intent i = new Intent(getActivity(), Input.class);
+            startActivity(i);
         }
 
         @Override
