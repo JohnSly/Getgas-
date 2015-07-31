@@ -36,23 +36,23 @@ public class MyIntro extends AppIntro {
         setVibrateIntensity(40);
     }
 
-    private void loadMainActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+    private void loadInput(){
+        Intent intent = new Intent(this, Input.class);
         startActivity(intent);
     }
 
     @Override
     public void onSkipPressed() {
-        loadMainActivity();
+        loadInput();
     }
 
     @Override
     public void onDonePressed() {
-        loadMainActivity();
+        loadInput();
     }
 
     public void getStarted(View v) {
-        loadMainActivity();
+        loadInput();
     }
 
 }
