@@ -17,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    repositories{
+    repositories {
         mavenCentral()
     }
 }
@@ -28,4 +28,5 @@ dependencies {
     compile 'com.facebook.android:facebook-android-sdk:4.1.0'
     compile 'com.github.paolorotolo:appintro:3.1.0'
     compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'com.google.android.gms:play-services:7.5.0'
 }

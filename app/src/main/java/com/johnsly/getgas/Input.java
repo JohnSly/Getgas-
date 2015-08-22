@@ -1,5 +1,6 @@
 package com.johnsly.getgas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
@@ -19,6 +20,8 @@ public class Input extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input);
+
+
 
         // in Activity Context
         ImageView icon = new ImageView(this); // Create an icon
