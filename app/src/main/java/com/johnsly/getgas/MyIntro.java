@@ -37,7 +37,7 @@ public class MyIntro extends AppIntro {
     }
 
     private void loadMainActivity(){
-        Intent intent = new Intent(this, Input.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 
